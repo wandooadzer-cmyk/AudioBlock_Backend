@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev --respawn --trace-warnings --transpile-only src/index.ts",
+    "dev": "node init && ts-node-dev --respawn --trace-warnings --transpile-only src/index.ts",
     "worker": "ts-node src/workers/SongProcessorWorker.ts",
-    "build": "tsc",
-    "start": "node dist/index.js",
+    "build": "node init && tsc",
+    "start": "node init && node dist/index.js",
     "test": "jest",
     "test:integration": "jest --runInBand tests/integration/**/*.test.ts",
     "test:watch": "jest --watch",
