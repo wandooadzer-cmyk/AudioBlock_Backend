@@ -1,0 +1,18 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "docs/adr-008-caching-strategy",
+    "main",
+    "origin"
+  ],
+  "parent": {
+    "docs/adr-008-caching-strategy": "main",
+    "main": null,
+    "origin": "main"
+  },
+  "order": [
+    "main",
+    "docs/adr-008-caching-strategy",
+    "origin"
+  ]
+}
